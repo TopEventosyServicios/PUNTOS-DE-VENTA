@@ -5,7 +5,6 @@ const button = document.querySelector("#open-booth");
 const label = document.querySelector("#open-label");
 const sales = document.querySelector("#sales");
 const title = document.querySelector("#sales-title");
-const marquee = document.querySelector("#marquee");
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
 function showPoints() {
@@ -31,7 +30,6 @@ button.addEventListener("click", () => {
 
   booth.dataset.state = "opening";
   button.setAttribute("aria-disabled", "true");
-  marquee.textContent = "Entradas a la venta";
   label.textContent = "Abriendo taquilla";
   if (reducedMotion.matches) finishOpening();
   else window.setTimeout(finishOpening, 1380);

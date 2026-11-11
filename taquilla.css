@@ -75,6 +75,13 @@ button { font: inherit; cursor: pointer; }
   text-transform: uppercase;
   letter-spacing: .26em;
 }
+.sale-date {
+  display: block;
+  margin-top: .48em;
+  font-size: .92em;
+  letter-spacing: .1em;
+}
+.sale-date time { white-space: nowrap; }
 .booth[data-state] .marquee {
   color: #ffe5af;
   text-shadow: 0 0 9px #f8aa4d, 0 0 30px #f8a043;
