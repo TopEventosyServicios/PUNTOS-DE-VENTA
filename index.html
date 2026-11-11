@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d0a">
+  <meta name="description" content="Abre la taquilla del Cotillón 26/27. Consulta los puntos de venta y los teléfonos para comprar tu entrada.">
+  <title>La taquilla del Cotillón 26/27 · TOP EVENTOS</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="taquilla.css">
+  <script src="taquilla.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <span class="brand"><span aria-hidden="true">✦</span> TOP EVENTOS</span>
+    <span>NOCHEVIEJA <strong>26 / 27</strong></span>
+  </header>
+  <main>
+    <section class="booth" aria-labelledby="title">
+      <img class="booth-image" src="taquilla.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      <div class="window-glow" aria-hidden="true"></div>
+      <div class="window-content">
+        <p class="marquee" id="marquee" role="status">COTILLÓN 26 / 27</p>
+        <h1 id="title">La taquilla <em>del Cotillón</em></h1>
+        <button class="open-button" id="open-booth" type="button" aria-controls="sales" aria-expanded="false" hidden>
+          <span id="open-label">Abrir taquilla</span><span aria-hidden="true">↓</span>
+        </button>
+      </div>
+      <div class="dispenser" aria-hidden="true">
+        <div class="paper"><span>BAR ALOE</span></div>
+        <div class="paper"><span>TUNANTE</span></div>
+        <div class="paper"><span>BUGANVILLA</span></div>
+      </div>
+    </section>
+
+    <div class="sales" id="sales">
+      <section aria-labelledby="sales-title">
+        <h2 id="sales-title" tabindex="-1">Puntos de venta</h2>
+        <ul class="ticket-list">
+          <li class="ticket">
+            <div>
+              <h3>Bar Aloe</h3>
+              <p>C. Alcalde Manuel Gutiérrez, 8<br>Sanlúcar la Mayor</p>
+            </div>
+            <a href="https://maps.app.goo.gl/CXgNZzuhRRtsVjSE7" target="_blank" rel="noopener" aria-label="Cómo llegar a Bar Aloe en Google Maps">Cómo llegar <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="ticket">
+            <div>
+              <h3>Tunante</h3>
+              <p>C. Desarrollo, 5<br>Benacazón</p>
+            </div>
+            <a href="https://maps.app.goo.gl/fC24Bgc24Ju6cRRUA" target="_blank" rel="noopener" aria-label="Cómo llegar a Tunante en Google Maps">Cómo llegar <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="ticket">
+            <div>
+              <h3>Buganvilla Drinks</h3>
+              <p>C. San Sebastián, 24<br>Benacazón</p>
+            </div>
+            <a href="https://maps.app.goo.gl/kyTBCprSCNAfFWRo7" target="_blank" rel="noopener" aria-label="Cómo llegar a Buganvilla Drinks en Google Maps">Cómo llegar <span aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="phone-section" aria-labelledby="phone-title">
+        <h2 id="phone-title">Entradas por teléfono</h2>
+        <ul class="phone-list">
+          <li><a href="tel:+34630155210" aria-label="Llamar al 630 155 210"><span>630 155 210</span><span class="call">Llamar <span aria-hidden="true">↗</span></span></a></li>
+          <li><a href="tel:+34684135025" aria-label="Llamar al 684 135 025"><span>684 135 025</span><span class="call">Llamar <span aria-hidden="true">↗</span></span></a></li>
+          <li><a href="tel:+34635321782" aria-label="Llamar al 635 321 782"><span>635 321 782</span><span class="call">Llamar <span aria-hidden="true">↗</span></span></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
