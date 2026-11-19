@@ -139,7 +139,7 @@ h1 em { display: block; color: var(--gold); font-weight: inherit; }
     radial-gradient(ellipse at 50% 90%, #fbe6ab, #be884d),
     #e8c489;
   box-shadow: 0 4px 14px #000b;
-  font: 700 clamp(5px, 1vw, 10px)/1.1 "Courier New", monospace;
+  font: 700 clamp(6.5px, 1.4vw, 13px)/1.1 "Courier New", monospace;
   text-align: center;
   opacity: 0;
   transform-origin: center top;
