@@ -177,6 +177,9 @@ h1 em { display: block; color: var(--gold); font-weight: inherit; }
   margin: 0;
   padding: 0;
 }
+.ticket-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ticket { grid-column: span 2; }
+.ticket:last-child { grid-column: 2 / span 2; }
 .ticket {
   display: flex;
   flex-direction: column;
@@ -237,10 +240,13 @@ h1 em { display: block; color: var(--gold); font-weight: inherit; }
   .window-content { inset: 25% 11% 33%; gap: 11px; }
   h1 { font-size: clamp(37px, 10vw, 60px); }
   .open-button { min-height: 45px; padding: 0 14px; }
-  .ticket-list, .phone-list { grid-template-columns: 1fr; gap: 10px; }
+  .ticket-list, .phone-list { gap: 10px; }
+  .phone-list { grid-template-columns: 1fr; }
   .sales { padding-top: 27px; }
-  .ticket { min-height: 132px; padding: 15px 18px; gap: 10px; }
-  .ticket h3 { font-size: 28px; }
+  .ticket { min-height: 192px; padding: 15px 12px; gap: 12px; }
+  .ticket h3 { font-size: clamp(21px, 5.4vw, 28px); overflow-wrap: anywhere; }
+  .ticket p { font-size: 12px; }
+  .ticket a { padding: 0 8px; font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .window-glow { transition: none; }
